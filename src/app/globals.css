@@ -26,6 +26,59 @@ a{text-decoration:none;color:inherit}
 button,input,select,textarea{font:inherit}
 ::selection{background:var(--ember);color:#fff}
 
+.brand-wordmark{
+  position:relative;
+  display:inline-grid;
+  grid-template-columns:auto auto auto;
+  align-items:end;
+  width:max-content;
+  min-width:176px;
+  line-height:.78;
+}
+.brand-main{
+  color:#f7f7f5;
+  font-size:2rem;
+  font-weight:1000;
+  font-style:italic;
+  letter-spacing:0;
+}
+.brand-wordmark.dark .brand-main{color:#3c3f43}
+.brand-x{
+  display:grid;
+  place-items:center;
+  width:35px;
+  height:34px;
+  margin-left:2px;
+  border-radius:4px;
+  background:var(--ember);
+  color:#fff;
+  font-size:2.05rem;
+  font-weight:1000;
+  font-style:italic;
+  line-height:1;
+}
+.brand-dots{
+  display:grid;
+  gap:5px;
+  align-self:center;
+  margin-left:4px;
+}
+.brand-dots i{
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:var(--ember);
+}
+.brand-sub{
+  grid-column:2 / 4;
+  justify-self:end;
+  margin-top:3px;
+  color:var(--ember);
+  font-size:.82rem;
+  font-weight:1000;
+  font-style:italic;
+}
+
 .site-header{
   position:fixed;
   z-index:60;
@@ -151,10 +204,10 @@ button,input,select,textarea{font:inherit}
   margin:0 auto;
 }
 .hero-copy h1{
-  max-width:840px;
+  max-width:780px;
   margin:18px 0;
-  font-size:clamp(3.3rem,8vw,7.6rem);
-  line-height:.9;
+  font-size:clamp(3rem,6.5vw,6rem);
+  line-height:.94;
   letter-spacing:0;
   font-weight:1000;
 }
@@ -281,8 +334,8 @@ button,input,select,textarea{font:inherit}
 }
 .positioning-section h2,.section-intro h2,.split h2,.cta-box h2{
   margin:0;
-  font-size:clamp(2.4rem,5vw,5.4rem);
-  line-height:.98;
+  font-size:clamp(2.05rem,4.1vw,4.35rem);
+  line-height:1;
   letter-spacing:0;
   font-weight:1000;
 }
@@ -291,7 +344,12 @@ button,input,select,textarea{font:inherit}
 .section-intro h2{margin-bottom:18px}
 
 .areas-section,.telecom-section,.automation-section,.projects-section,.about-section,.contact-section{background:var(--ink)}
-.technology-section,.web-section,.method-section,.usecases-section,.stats-section,.cta-section{background:var(--charcoal)}
+.technology-section,.method-section,.usecases-section,.stats-section,.cta-section{background:var(--charcoal)}
+.web-section{
+  background:
+    radial-gradient(circle at 24% 45%,rgba(240,68,56,.16),transparent 30%),
+    linear-gradient(180deg,#141414,#090909);
+}
 .areas-grid,.projects-grid,.usecase-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -409,6 +467,28 @@ button,input,select,textarea{font:inherit}
 .tech-strip span:hover{filter:grayscale(0);color:#fff;border-color:rgba(240,68,56,.45);transform:translateY(-4px)}
 
 .browser-mockup{padding:22px}
+.code-video-bg{
+  position:absolute;
+  inset:0;
+  display:grid;
+  align-content:start;
+  gap:15px;
+  padding:28px;
+  color:rgba(255,255,255,.18);
+  font-family:Consolas,"Courier New",monospace;
+  font-size:.78rem;
+  letter-spacing:0;
+  transform:skewY(-6deg) translateY(-20px);
+  animation:console-drift 9s linear infinite;
+  pointer-events:none;
+}
+.code-video-bg span:nth-child(2n){color:rgba(240,68,56,.34)}
+.code-video-bg::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(9,9,9,.08),rgba(9,9,9,.88));
+}
 .browser-top{display:flex;gap:8px;margin-bottom:20px}
 .browser-top span{width:11px;height:11px;border-radius:50%;background:rgba(255,255,255,.35)}
 .browser-body{display:grid;grid-template-columns:78px 1fr;gap:20px}
@@ -481,6 +561,30 @@ button,input,select,textarea{font:inherit}
     #111;
   color:var(--ember);
   margin-bottom:20px;
+}
+.fibertech-cover{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 72% 30%,rgba(255,255,255,.18),transparent 30%),
+    linear-gradient(135deg,#001f5c,#0058e6 52%,#05245f);
+}
+.fibertech-cover::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(115deg,transparent 0 38%,rgba(255,255,255,.16) 38% 39%,transparent 39% 100%),
+    linear-gradient(30deg,transparent 0 54%,rgba(255,255,255,.1) 54% 55%,transparent 55% 100%);
+}
+.fibertech-f{
+  position:absolute;
+  left:20px;
+  bottom:-48px;
+  color:rgba(255,255,255,.16);
+  font-size:13rem;
+  font-weight:1000;
+  line-height:.8;
 }
 .project-card a{display:inline-flex;align-items:center;gap:8px;margin-top:22px;color:#fff;font-weight:1000}
 .usecase-grid p{display:flex;gap:8px;align-items:center;margin:10px 0}
@@ -569,6 +673,7 @@ button,input,select,textarea{font:inherit}
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes scroll-dot{50%{transform:translate(-50%,12px);opacity:.45}}
 @keyframes pulse-move{from{background-position:0 0}to{background-position:560px 0}}
+@keyframes console-drift{from{transform:skewY(-6deg) translateY(-30px)}to{transform:skewY(-6deg) translateY(-160px)}}
 
 @media (max-width: 1024px){
   .site-header{padding:0 20px}
@@ -580,11 +685,11 @@ button,input,select,textarea{font:inherit}
 
 @media (max-width: 640px){
   .hero-section{padding:112px 22px 64px}
-  .hero-copy h1{font-size:3rem}
+  .hero-copy h1{font-size:2.7rem}
   .hero-actions,.hero-actions.center{flex-direction:column;align-items:stretch}
   .btn-primary,.btn-secondary{width:100%}
   .section{padding:72px 22px}
-  .positioning-section h2,.section-intro h2,.split h2,.cta-box h2{font-size:2.25rem}
+  .positioning-section h2,.section-intro h2,.split h2,.cta-box h2{font-size:2rem}
   .capability-grid,.automation-flow,.timeline,.stats-grid,.tech-strip,.contact-form{grid-template-columns:1fr}
   .network-diagram,.browser-mockup{min-height:460px}
   .flow-step::after{display:none}

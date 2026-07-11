@@ -54,11 +54,11 @@ export function HomePage() {
           <motion.div initial="hidden" animate="visible" variants={fade} transition={{ duration: 0.7 }} className="hero-copy">
             <p className="eyebrow">Telecomunicaciones · Software · Automatización</p>
             <h1>
-              Tecnología que conecta, desarrolla y automatiza
+              Ingeniería digital para operar mejor
             </h1>
             <p>
-              Diseñamos soluciones en telecomunicaciones, desarrollo web y automatización para empresas que necesitan avanzar,
-              optimizarse y crecer.
+              Diseñamos redes, plataformas y flujos automáticos para empresas que necesitan control técnico,
+              velocidad de respuesta y una presencia digital de alto nivel.
             </p>
             <div className="hero-actions">
               <a href="#soluciones" className="btn-primary">
@@ -94,15 +94,15 @@ export function HomePage() {
       </section>
 
       <RevealSection id="posicionamiento" className="positioning-section">
-        <h2>No vendemos tecnología aislada. Diseñamos soluciones que trabajan juntas.</h2>
-        <p>Conectamos infraestructura, software y automatización para construir operaciones más rápidas, seguras y eficientes.</p>
+        <h2>Infraestructura, software y automatización en una misma estrategia.</h2>
+        <p>Unimos redes, sistemas y procesos para que la operación funcione con menos fricción y más visibilidad.</p>
       </RevealSection>
 
       <RevealSection id="soluciones" className="areas-section">
         <SectionIntro
           eyebrow="Áreas principales"
-          title="Redes que conectan. Software que transforma. Automatización que impulsa."
-          text="Tres capacidades integradas para resolver retos tecnológicos reales."
+          title="Tres frentes técnicos para una operación más fuerte"
+          text="No se trata de tener más herramientas. Se trata de que todo hable entre sí."
         />
         <div className="areas-grid">
           {solutionAreas.map((area) => (
@@ -157,8 +157,8 @@ export function HomePage() {
           <BrowserMockup />
           <div>
             <p className="eyebrow">Desarrollo web</p>
-            <h2>Diseño atractivo. Desarrollo sólido.</h2>
-            <p>Creamos productos digitales que combinan identidad, velocidad, experiencia de usuario y tecnología.</p>
+            <h2>Interfaces que se sienten precisas por fuera y robustas por dentro.</h2>
+            <p>Creamos productos digitales que combinan identidad, velocidad, experiencia de usuario y lógica de negocio.</p>
             <div className="process-tabs">
               {["Idea", "Diseño", "Desarrollo", "Publicación", "Optimización"].map((step) => (
                 <span key={step}>{step}</span>
@@ -209,7 +209,9 @@ export function HomePage() {
         <div className="projects-grid">
           {projects.map((project) => (
             <article key={project.name} className="project-card">
-              <div className="project-visual"><Cpu size={38} /></div>
+              <div className={`project-visual ${project.name === "Fibertech" ? "fibertech-cover" : ""}`}>
+                {project.name === "Fibertech" ? <span className="fibertech-f">F</span> : <Cpu size={38} />}
+              </div>
               <p className="eyebrow">{project.category}</p>
               <h3>{project.name}</h3>
               <p>{project.description}</p>
@@ -358,6 +360,14 @@ function NetworkDiagram() {
 function BrowserMockup() {
   return (
     <div className="browser-mockup" aria-label="Vista de desarrollo web">
+      <div className="code-video-bg" aria-hidden="true">
+        <span>deploy:web --target production</span>
+        <span>api.sync(payments, clients)</span>
+        <span>router bgp 65001 / ipv6 ready</span>
+        <span>build completed in 1.8s</span>
+        <span>automation.flow.status = active</span>
+        <span>monitor latency: 7ms</span>
+      </div>
       <div className="browser-top"><span /><span /><span /></div>
       <div className="browser-body">
         <aside />

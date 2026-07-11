@@ -1,6 +1,5 @@
 import {
   Activity,
-  Bot,
   Cable,
   Code2,
   Gauge,
@@ -49,7 +48,7 @@ export const solutionAreas = [
     kicker: "Telecomunicaciones",
     title: "Infraestructura preparada para crecer",
     description:
-      "Diseñamos, configuramos y optimizamos redes para empresas, operadores e ISP, desde la planificación inicial hasta la operación y el monitoreo.",
+      "Construimos rutas claras para redes exigentes: arquitectura, configuración, seguridad, documentación y operación continua para empresas e ISP.",
     icon: RadioTower,
     services: ["Diseño de redes", "Routing y switching", "BGP y OSPF", "IPv4 e IPv6", "GPON", "Seguridad", "Monitoreo", "Optimización"]
   },
@@ -58,7 +57,7 @@ export const solutionAreas = [
     kicker: "Desarrollo web",
     title: "Experiencias digitales que sí representan a tu empresa",
     description:
-      "Creamos páginas, portales y plataformas rápidas, modernas, adaptables y preparadas para convertir visitas en oportunidades.",
+      "Convertimos identidad y procesos en productos web rápidos, sólidos y preparados para generar oportunidades reales.",
     icon: Code2,
     services: ["Webs corporativas", "Portales empresariales", "Sistemas administrativos", "Aplicaciones web", "Paneles de control", "Integración con APIs", "Diseño responsive", "SEO"]
   },
@@ -67,7 +66,7 @@ export const solutionAreas = [
     kicker: "Automatización",
     title: "Menos tareas manuales. Más control.",
     description:
-      "Convertimos procesos repetitivos en flujos automáticos conectados con tus sistemas, clientes y operaciones.",
+      "Diseñamos flujos que conectan pagos, clientes, plataformas y notificaciones para reducir tareas repetitivas y errores.",
     icon: Workflow,
     services: ["Automatización de pagos", "Activación de servicios", "Gestión de clientes", "Alertas", "Reportes", "Integraciones", "Flujos empresariales", "Automatización para ISP"]
   }
@@ -93,7 +92,7 @@ export const projects = [
     category: "Desarrollo web / Telecomunicaciones",
     year: "2026",
     description:
-      "Diseño y desarrollo de una presencia digital para una empresa de telecomunicaciones, orientada a presentar sus servicios, cobertura y canales de atención.",
+      "Presencia digital para una empresa de telecomunicaciones, con enfoque en planes, canales de atención, marca y experiencia móvil.",
     technologies: ["Web corporativa", "Contenido editable", "UX responsive"],
     result: "Proyecto publicado",
     link: "https://fibertech.com.ve"
