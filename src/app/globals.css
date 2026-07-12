@@ -215,30 +215,36 @@ button,input,select,textarea{font:inherit}
 }
 .video-console{
   position:absolute;
-  right:8vw;
-  top:26%;
+  right:4vw;
+  top:17%;
   display:grid;
-  gap:10px;
-  width:min(430px,38vw);
-  border:1px solid rgba(255,255,255,.12);
+  gap:12px;
+  width:min(660px,52vw);
+  border:1px solid rgba(255,255,255,.18);
   border-radius:8px;
-  background:rgba(8,8,8,.72);
-  padding:18px;
+  background:linear-gradient(135deg,rgba(8,8,8,.58),rgba(8,8,8,.34));
+  padding:24px 26px;
   font-family:Consolas,"Courier New",monospace;
-  font-size:.78rem;
-  color:rgba(255,255,255,.68);
-  box-shadow:0 28px 80px rgba(0,0,0,.35);
+  font-size:.94rem;
+  color:rgba(255,255,255,.76);
+  box-shadow:0 28px 90px rgba(0,0,0,.28);
+  backdrop-filter:blur(6px);
   animation:panel-float 5s ease-in-out infinite;
 }
-.video-console span:nth-child(2n){color:rgba(240,68,56,.88)}
+.video-console span{
+  white-space:nowrap;
+  text-shadow:0 0 18px rgba(255,255,255,.16);
+}
+.video-console span:nth-child(2n){color:rgba(240,68,56,.94)}
+.video-console span:nth-child(3n){color:rgba(255,255,255,.88)}
 .video-card{
   position:absolute;
   min-width:120px;
   border:1px solid rgba(255,255,255,.12);
   border-radius:999px;
-  background:rgba(255,255,255,.08);
-  padding:12px 15px;
-  color:#fff;
+  background:rgba(255,255,255,.055);
+  padding:11px 14px;
+  color:rgba(255,255,255,.74);
   font-size:.78rem;
   font-weight:1000;
   text-transform:uppercase;
@@ -319,29 +325,31 @@ button,input,select,textarea{font:inherit}
 
 .hero-system{
   position:relative;
-  min-height:520px;
-  border:1px solid rgba(255,255,255,.12);
+  min-height:490px;
+  border:1px solid rgba(255,255,255,.08);
   border-radius:32px;
-  background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));
-  box-shadow:0 40px 110px rgba(0,0,0,.42);
+  background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.012));
+  box-shadow:0 28px 90px rgba(0,0,0,.24);
+  backdrop-filter:blur(6px);
   overflow:hidden;
 }
 .hero-system::before{
   content:"";
   position:absolute;
   inset:22px;
-  border:1px solid rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.055);
   border-radius:24px;
 }
 .topology-node{
   position:absolute;
   z-index:2;
-  border:1px solid rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.12);
   border-radius:999px;
-  background:#101010;
+  background:rgba(16,16,16,.58);
   padding:10px 14px;
   font-size:.82rem;
   font-weight:900;
+  backdrop-filter:blur(8px);
 }
 .t1{left:34px;top:78px}.t2{right:54px;top:118px}.t3{left:42%;top:210px}.t4{left:68px;bottom:120px}.t5{right:58px;bottom:74px}
 .monitor-panel{
@@ -349,25 +357,26 @@ button,input,select,textarea{font:inherit}
   left:50%;
   top:49%;
   transform:translate(-50%,-50%);
-  width:250px;
+  width:220px;
   border:1px solid rgba(255,255,255,.12);
   border-radius:22px;
-  background:rgba(6,6,6,.84);
-  padding:16px;
+  background:rgba(6,6,6,.58);
+  padding:14px;
+  backdrop-filter:blur(8px);
 }
 .panel-head{display:flex;gap:7px;margin-bottom:14px}
 .panel-head span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.28)}
-.metric-row{display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.08);padding:12px 0;color:rgba(255,255,255,.72)}
+.metric-row{display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.08);padding:10px 0;color:rgba(255,255,255,.72)}
 .metric-row strong{color:var(--ember)}
 .flow-chip{
   position:absolute;
-  right:34px;
-  bottom:170px;
+  right:28px;
+  bottom:150px;
   display:flex;
   gap:8px;
   align-items:center;
   border-radius:999px;
-  background:#fff;
+  background:rgba(255,255,255,.86);
   color:#111;
   padding:12px 15px;
   font-size:.8rem;

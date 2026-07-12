@@ -37,9 +37,13 @@ export function HomePage() {
             <div className="video-orbit orbit-b" />
             <div className="video-console">
               <span>networx@core:~$ monitor uplinks --live</span>
-              <span>bgp session established / latency 7ms</span>
-              <span>deploy portal-client --channel stable</span>
-              <span>automation webhook payments: listening</span>
+              <span>const workflow = connect(payments, clients, olt);</span>
+              <span>bgp.neighbor("edge-01").status = "established";</span>
+              <span>await deploy("portal-client", &#123; channel: "stable" &#125;);</span>
+              <span>if invoice.paid then service.activate();</span>
+              <span>ipv6.prefix.delegate("business-cpe");</span>
+              <span>automation.webhook("/payments").listen();</span>
+              <span>logger.info("network latency: 7ms");</span>
             </div>
             <div className="video-card video-card-a">core router</div>
             <div className="video-card video-card-b">api gateway</div>
@@ -73,7 +77,7 @@ export function HomePage() {
             </div>
           </motion.div>
 
-          <motion.div className="hero-system" initial={{ opacity: 0, scale: 0.94 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.25, duration: 0.75 }}>
+          <motion.div className="hero-system" initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.25, duration: 0.75 }}>
             <div className="topology">
               {["Internet", "Borde", "Core", "OLT", "Clientes"].map((node, index) => (
                 <span key={node} className={`topology-node t${index + 1}`}>
