@@ -4,15 +4,11 @@ type LogoProps = {
 };
 
 export function Logo({ variant = "light", className = "" }: LogoProps) {
+  const src = variant === "dark" ? "/media/logo/networx-solutions-logo.svg" : "/media/logo/networx-solutions-logo-light.svg";
+
   return (
     <span className={`brand-wordmark ${variant === "dark" ? "dark" : "light"} ${className}`} aria-label="NetworX Solutions">
-      <span className="brand-main">Networ</span>
-      <span className="brand-x">X</span>
-      <span className="brand-dots" aria-hidden="true">
-        <i />
-        <i />
-      </span>
-      <span className="brand-sub">Solutions</span>
+      <img src={src} alt="" />
     </span>
   );
 }

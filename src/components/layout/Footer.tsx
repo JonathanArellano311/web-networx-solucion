@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-ink px-5 py-14 text-white">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
-          <Logo variant="light" />
+          <Logo variant="dark" />
           <p className="mt-5 max-w-sm text-sm leading-7 text-white/58">
             Empresa tecnológica integral para infraestructura, software y automatización.
           </p>

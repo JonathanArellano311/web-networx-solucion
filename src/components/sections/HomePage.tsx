@@ -68,13 +68,13 @@ export function HomePage() {
         </div>
         <div className="hero-grid">
           <motion.div initial="hidden" animate="visible" variants={fade} transition={{ duration: 0.7 }} className="hero-copy">
-            <p className="eyebrow">Telecomunicaciones · Software · Automatización</p>
+            <p className="eyebrow">Consultoria ISP · MikroTik · IPv4/IPv6</p>
             <h1>
-              Ingeniería digital para operar mejor
+              Consultores para hacer crecer tu red
             </h1>
             <p>
-              Diseñamos redes, plataformas y flujos automáticos para empresas que necesitan control técnico,
-              velocidad de respuesta y una presencia digital de alto nivel.
+              Ayudamos a proveedores de internet y empresas a ordenar, optimizar y escalar su infraestructura
+              con redes solidas, automatizacion y presencia digital profesional.
             </p>
             <div className="hero-actions">
               <a href="#soluciones" className="btn-primary">
@@ -115,9 +115,9 @@ export function HomePage() {
 
       <RevealSection id="soluciones" className="areas-section">
         <SectionIntro
-          eyebrow="Áreas principales"
-          title="Tres frentes técnicos para una operación más fuerte"
-          text="No se trata de tener más herramientas. Se trata de que todo hable entre sí."
+          eyebrow="Lo que resolvemos"
+          title="Consultoria, software y operacion para ISP que quieren crecer"
+          text="NetworX Solutions trabaja donde mas duele: red, soporte, clientes, automatizacion y presencia digital."
         />
         <div className="areas-grid">
           {solutionAreas.map((area) => (
@@ -139,9 +139,12 @@ export function HomePage() {
       <RevealSection id="telecom" className="telecom-section">
         <div className="split">
           <div>
-            <p className="eyebrow">Telecomunicaciones para ISP y empresas</p>
-            <h2>Expertos en el núcleo de tu operación</h2>
-            <p>Trabajamos con redes que necesitan estabilidad, seguridad, escalabilidad y control.</p>
+            <p className="eyebrow">Gestores y consultores para ISP</p>
+            <h2>Mejoramos tu red segun lo que tu operacion necesite.</h2>
+            <p>
+              Auditamos, disenamos y acompanamos decisiones tecnicas para que tu ISP tenga mas estabilidad,
+              mejor control, seguridad, capacidad de crecimiento y una ruta clara hacia IPv6.
+            </p>
             <div className="capability-grid">
               {telecomCapabilities.map((capability) => (
                 <span key={capability.label}>
@@ -156,9 +159,9 @@ export function HomePage() {
 
       <RevealSection className="technology-section">
         <SectionIntro
-          eyebrow="Tecnologías"
-          title="Tecnologías con las que trabajamos"
-          text="Las marcas mencionadas pertenecen a sus respectivos propietarios. NetworX Solutions trabaja con tecnologías de distintos fabricantes y no implica afiliación oficial."
+          eyebrow="Base tecnica"
+          title="Tecnologias y criterios que dominamos"
+          text="Trabajamos con equipos, protocolos y buenas practicas reales de operacion ISP. Las marcas mencionadas pertenecen a sus respectivos propietarios."
         />
         <div className="tech-strip">
           {technologies.map((tech) => (
@@ -171,11 +174,14 @@ export function HomePage() {
         <div className="split reverse">
           <BrowserMockup />
           <div>
-            <p className="eyebrow">Desarrollo web</p>
-            <h2>Interfaces que se sienten precisas por fuera y robustas por dentro.</h2>
-            <p>Creamos productos digitales que combinan identidad, velocidad, experiencia de usuario y lógica de negocio.</p>
+            <p className="eyebrow">Web, portales y sistemas</p>
+            <h2>Sitios que venden confianza y sistemas que ordenan tu operacion.</h2>
+            <p>
+              Creamos paginas corporativas, portales para clientes, paneles internos e integraciones pensadas
+              para que el negocio se vea serio y funcione mejor.
+            </p>
             <div className="process-tabs">
-              {["Idea", "Diseño", "Desarrollo", "Publicación", "Optimización"].map((step) => (
+              {["Marca", "UX movil", "Portal", "APIs", "SEO tecnico"].map((step) => (
                 <span key={step}>{step}</span>
               ))}
             </div>
@@ -185,9 +191,9 @@ export function HomePage() {
 
       <RevealSection id="automatizacion" className="automation-section">
         <SectionIntro
-          eyebrow="Automatización"
-          title="Procesos que trabajan incluso cuando tú no estás mirando"
-          text="Integramos plataformas, APIs y sistemas para reducir errores, tiempos de espera y tareas repetitivas."
+          eyebrow="Automatizacion operativa"
+          title="Menos tareas manuales, mas velocidad de respuesta"
+          text="Integramos plataformas, APIs, pagos, soporte y datos para que la operacion avance con menos errores y mas control."
         />
         <div className="automation-flow">
           {automationFlow.map((item, index) => (
@@ -201,9 +207,9 @@ export function HomePage() {
 
       <RevealSection className="method-section">
         <SectionIntro
-          eyebrow="Metodología"
-          title="Cada proyecto comienza entendiendo el problema"
-          text="No vendemos una solución prefabricada. Diseñamos el camino técnico según la operación."
+          eyebrow="Metodo de trabajo"
+          title="Primero entendemos la red, luego proponemos el camino"
+          text="No vendemos recetas. Revisamos la operacion, detectamos riesgos y construimos una ruta tecnica posible."
         />
         <div className="timeline">
           {workMethod.map((step, index) => (
@@ -218,8 +224,8 @@ export function HomePage() {
       <RevealSection id="proyectos" className="projects-section">
         <SectionIntro
           eyebrow="Portafolio"
-          title="Proyectos que conectan estrategia y tecnología"
-          text="Contenido editable desde datos. Los placeholders deben reemplazarse por proyectos reales."
+          title="Trabajo real, presentado con seriedad"
+          text="Mostramos proyectos publicados y verificables. Fibertech es nuestro caso destacado actual."
         />
         <div className="projects-grid">
           {projects.map((project) => (
@@ -244,7 +250,7 @@ export function HomePage() {
       </RevealSection>
 
       <RevealSection className="usecases-section">
-        <SectionIntro eyebrow="Casos de uso" title="Soluciones para diferentes operaciones" text="Adaptamos la arquitectura técnica al perfil y ritmo de cada organización." />
+        <SectionIntro eyebrow="Casos de uso" title="Donde NetworX puede ayudarte" text="Somos consultores tecnicos para mejorar redes, sistemas y presencia digital con foco en resultados reales." />
         <div className="usecase-grid">
           {useCases.map((useCase) => (
             <article key={useCase.title}>
@@ -272,12 +278,12 @@ export function HomePage() {
         <div className="split">
           <div>
             <p className="eyebrow">Nosotros</p>
-            <h2>Tecnología entendida desde la experiencia</h2>
+            <h2>Experiencia tecnica para decisiones importantes</h2>
           </div>
           <div>
             <p>
-              NetworX Solutions nace para ayudar a empresas y operadores a resolver retos tecnológicos reales. Combinamos experiencia
-              en telecomunicaciones, desarrollo de software y automatización para crear soluciones adaptadas a cada operación.
+              NetworX Solutions acompana a ISP y empresas que necesitan mejorar su red, ordenar procesos y crecer con tecnologia.
+              Somos especialistas en MikroTik, IPv4, IPv6, redes corporativas, sitios web y soluciones para escalar servicios.
             </p>
             <div className="principles">
               {principles.map((principle) => (
@@ -291,8 +297,8 @@ export function HomePage() {
       <RevealSection className="cta-section">
         <div className="cta-box">
           <div className="x-mark">X</div>
-          <h2>Convirtamos tu próximo desafío en una solución</h2>
-          <p>Cuéntanos qué necesitas mejorar, conectar o automatizar. Nuestro equipo analizará tu proyecto y te ayudará a definir el mejor camino.</p>
+          <h2>Llevemos tu red y tu operacion al siguiente nivel</h2>
+          <p>Cuentanos que necesitas mejorar. Revisamos tu caso y te orientamos con una ruta tecnica clara para avanzar.</p>
           <div className="hero-actions center">
             <a href="#contacto" className="btn-primary">Solicitar una consulta</a>
             <a href={whatsapp} target="_blank" rel="noreferrer" className="btn-secondary">Contactar por WhatsApp</a>
@@ -304,8 +310,8 @@ export function HomePage() {
         <div className="split">
           <div>
             <p className="eyebrow">Contacto</p>
-            <h2>Hablemos de tu operación</h2>
-            <p>El formulario queda preparado para conectarlo posteriormente con una API, correo o CRM.</p>
+            <h2>Hablemos de tu red, sistema o proyecto web</h2>
+            <p>Describe que quieres mejorar y te contactaremos para analizar el caso con enfoque tecnico y comercial.</p>
           </div>
           <ContactForm />
         </div>
@@ -355,19 +361,40 @@ function SectionIntro({ eyebrow, title, text }: { eyebrow: string; title: string
 }
 
 function NetworkDiagram() {
-  const nodes = ["Internet", "Router de borde", "Core", "Switch", "OLT", "Clientes", "Servidores", "Monitoreo"];
+  const diagnostics = [
+    ["MikroTik core", "routing limpio"],
+    ["IPv4 / IPv6", "plan de crecimiento"],
+    ["Firewall", "reglas auditadas"],
+    ["Clientes", "segmentacion clara"],
+    ["Monitoreo", "alertas accionables"],
+    ["Capacidad", "rutas optimizadas"]
+  ];
+
   return (
-    <div className="network-diagram" aria-label="Topología de red animada">
-      {nodes.map((node, index) => (
-        <span key={node} className={`diagram-node d${index + 1}`}>
-          <CircleDot size={15} /> {node}
-        </span>
-      ))}
-      <div className="pulse-line p1" />
-      <div className="pulse-line p2" />
-      <div className="pulse-line p3" />
-      <div className="server-card"><Server size={22} /> uptime monitor</div>
-      <div className="shield-card"><Shield size={22} /> firewall rules</div>
+    <div className="network-diagram isp-consulting-panel" aria-label="Panel de consultoria para red ISP">
+      <div className="consulting-radar">
+        <span />
+        <span />
+        <strong>ISP</strong>
+      </div>
+      <div className="consulting-path path-a" />
+      <div className="consulting-path path-b" />
+      <div className="consulting-summary">
+        <p className="eyebrow">Diagnostico NetworX</p>
+        <h3>Red lista para escalar</h3>
+        <p>MikroTik, IPv4/IPv6, seguridad, monitoreo y operacion bajo control.</p>
+      </div>
+      <div className="diagnostic-grid">
+        {diagnostics.map(([title, text], index) => (
+          <div key={title} className={`diagnostic-card dc${index + 1}`}>
+            <CircleDot size={15} />
+            <strong>{title}</strong>
+            <span>{text}</span>
+          </div>
+        ))}
+      </div>
+      <div className="server-card"><Server size={22} /> uptime y capacidad</div>
+      <div className="shield-card"><Shield size={22} /> seguridad perimetral</div>
     </div>
   );
 }
@@ -383,17 +410,28 @@ function BrowserMockup() {
         <span>automation.flow.status = active</span>
         <span>monitor latency: 7ms</span>
       </div>
-      <div className="browser-top"><span /><span /><span /></div>
-      <div className="browser-body">
-        <aside />
+      <div className="browser-top"><span /><span /><span /><strong>networx/web-system</strong></div>
+      <div className="browser-body web-product-board">
+        <aside>
+          <span />
+          <span />
+          <span />
+          <span />
+        </aside>
         <main>
-          <div className="skeleton hero" />
-          <div className="skeleton line" />
-          <div className="skeleton line short" />
-          <div className="mini-grid">
-            <span />
-            <span />
-            <span />
+          <div className="web-hero-preview">
+            <p>Portal ISP</p>
+            <strong>clientes · pagos · soporte</strong>
+          </div>
+          <div className="web-dashboard-row">
+            <span>SEO</span>
+            <span>UX movil</span>
+            <span>API</span>
+          </div>
+          <div className="web-panel-lines">
+            <i />
+            <i />
+            <i />
           </div>
         </main>
         <div className="phone-preview">

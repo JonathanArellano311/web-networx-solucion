@@ -19,7 +19,7 @@ export function Header() {
   return (
     <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
       <a href="#inicio" className="flex items-center" aria-label="Ir al inicio">
-        <Logo variant="light" />
+        <Logo variant="dark" />
       </a>
 
       <nav className="hidden items-center gap-7 lg:flex" aria-label="Navegación principal">
@@ -45,7 +45,7 @@ export function Header() {
 
       <div className={`mobile-menu ${open ? "is-open" : ""}`} aria-hidden={!open}>
         <div className="flex items-center justify-between">
-          <Logo variant="light" />
+          <Logo variant="dark" />
           <button
             className="grid h-11 w-11 place-items-center rounded-full border border-white/15 text-white"
             type="button"

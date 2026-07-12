@@ -14,7 +14,7 @@ import {
 
 export const company = {
   name: "NetworX Solutions",
-  tagline: "Telecomunicaciones · Desarrollo web · Automatización",
+  tagline: "Consultoria ISP · MikroTik · IPv4/IPv6 · Desarrollo web",
   email: "contacto@networxsolutions.example",
   phone: "+58 400-0000000",
   address: "Venezuela",
@@ -23,7 +23,7 @@ export const company = {
     country: "VE",
     schedule: "Lunes a viernes",
     message:
-      "Hola, visité la página de NetworX Solutions y me gustaría recibir información sobre sus servicios."
+      "Hola, visite la pagina de NetworX Solutions y me gustaria recibir asesoria para mejorar mi red o proyecto."
   },
   socials: {
     instagram: "#",
@@ -33,11 +33,11 @@ export const company = {
 
 export const navigation = [
   { label: "Inicio", href: "#inicio" },
-  { label: "Soluciones", href: "#soluciones" },
-  { label: "Telecomunicaciones", href: "#telecom" },
-  { label: "Desarrollo web", href: "#web" },
-  { label: "Automatización", href: "#automatizacion" },
-  { label: "Proyectos", href: "#proyectos" },
+  { label: "Consultoria", href: "#soluciones" },
+  { label: "Redes ISP", href: "#telecom" },
+  { label: "Web y sistemas", href: "#web" },
+  { label: "Automatizacion", href: "#automatizacion" },
+  { label: "Portafolio", href: "#proyectos" },
   { label: "Nosotros", href: "#nosotros" },
   { label: "Contacto", href: "#contacto" }
 ];
@@ -45,130 +45,92 @@ export const navigation = [
 export const solutionAreas = [
   {
     id: "telecom",
-    kicker: "Telecomunicaciones",
-    title: "Infraestructura preparada para crecer",
+    kicker: "Consultoria ISP",
+    title: "Gestion tecnica para escalar tu red",
     description:
-      "Construimos rutas claras para redes exigentes: arquitectura, configuración, seguridad, documentación y operación continua para empresas e ISP.",
+      "Acompanamos a proveedores de internet en arquitectura, MikroTik, IPv4, IPv6, seguridad, optimizacion y decisiones tecnicas para crecer con control.",
     icon: RadioTower,
-    services: ["Diseño de redes", "Routing y switching", "BGP y OSPF", "IPv4 e IPv6", "GPON", "Seguridad", "Monitoreo", "Optimización"]
+    services: ["MikroTik", "Routing y switching", "BGP y OSPF", "IPv4 e IPv6", "GPON", "Seguridad", "Monitoreo", "Optimizacion"]
   },
   {
     id: "web",
-    kicker: "Desarrollo web",
-    title: "Experiencias digitales que sí representan a tu empresa",
+    kicker: "Web y sistemas",
+    title: "Presencia digital con logica de negocio",
     description:
-      "Convertimos identidad y procesos en productos web rápidos, sólidos y preparados para generar oportunidades reales.",
+      "Disenamos sitios, portales y herramientas que no solo se ven bien: ayudan a vender, atender clientes, ordenar procesos y proyectar confianza.",
     icon: Code2,
-    services: ["Webs corporativas", "Portales empresariales", "Sistemas administrativos", "Aplicaciones web", "Paneles de control", "Integración con APIs", "Diseño responsive", "SEO"]
+    services: ["Webs corporativas", "Portales de clientes", "Sistemas internos", "Aplicaciones web", "Paneles de control", "Integracion con APIs", "Diseno responsive", "SEO"]
   },
   {
     id: "automatizacion",
-    kicker: "Automatización",
-    title: "Menos tareas manuales. Más control.",
+    kicker: "Procesos inteligentes",
+    title: "Automatizacion para operar sin friccion",
     description:
-      "Diseñamos flujos que conectan pagos, clientes, plataformas y notificaciones para reducir tareas repetitivas y errores.",
+      "Conectamos pagos, clientes, soporte, redes y notificaciones para que el ISP o la empresa reduzca tareas manuales y responda mas rapido.",
     icon: Workflow,
-    services: ["Automatización de pagos", "Activación de servicios", "Gestión de clientes", "Alertas", "Reportes", "Integraciones", "Flujos empresariales", "Automatización para ISP"]
+    services: ["Pagos", "Activacion de servicios", "Gestion de clientes", "Alertas", "Reportes", "Integraciones", "Flujos empresariales", "Automatizacion para ISP"]
   }
 ];
 
 export const telecomCapabilities = [
-  { label: "Arquitectura de red", icon: Network },
-  { label: "Implementación", icon: Cable },
-  { label: "Migraciones", icon: GitBranch },
-  { label: "Auditorías", icon: ShieldCheck },
-  { label: "Seguridad", icon: Lock },
-  { label: "Optimización", icon: Gauge },
-  { label: "Monitoreo", icon: Activity },
-  { label: "Documentación técnica", icon: Globe2 }
+  { label: "Consultoria MikroTik", icon: Network },
+  { label: "IPv4 e IPv6", icon: Cable },
+  { label: "Migraciones controladas", icon: GitBranch },
+  { label: "Auditorias de red", icon: ShieldCheck },
+  { label: "Firewall y seguridad", icon: Lock },
+  { label: "Optimizacion de trafico", icon: Gauge },
+  { label: "Monitoreo operativo", icon: Activity },
+  { label: "Documentacion tecnica", icon: Globe2 }
 ];
 
-export const technologies = ["MikroTik", "Cisco", "Huawei", "ZTE"];
+export const technologies = ["MikroTik", "Cisco", "Huawei", "ZTE", "IPv4", "IPv6", "GPON", "APIs"];
 
 export const projects = [
   {
     name: "Fibertech",
     client: "Fibertech",
-    category: "Desarrollo web / Telecomunicaciones",
+    category: "Web corporativa / ISP",
     year: "2026",
     description:
-      "Presencia digital para una empresa de telecomunicaciones, con enfoque en planes, canales de atención, marca y experiencia móvil.",
-    technologies: ["Web corporativa", "Contenido editable", "UX responsive"],
-    result: "Proyecto publicado",
+      "Sitio corporativo para un ISP real, trabajado con enfoque en marca, planes, cobertura, WhatsApp, experiencia movil y comunicacion clara para clientes finales.",
+    technologies: ["Web corporativa", "ISP", "UX movil", "Atencion comercial"],
+    result: "Sitio publicado",
     link: "https://fibertech.com.ve"
-  },
-  {
-    name: "Portal ISP",
-    client: "Placeholder",
-    category: "Sistemas",
-    year: "Pendiente",
-    description: "Proyecto de ejemplo para reemplazar por un caso real de portal de usuarios, pagos o soporte.",
-    technologies: ["Placeholder"],
-    result: "Pendiente por reemplazar",
-    link: "#"
-  },
-  {
-    name: "Automatización operativa",
-    client: "Placeholder",
-    category: "Automatización",
-    year: "Pendiente",
-    description: "Espacio reservado para documentar un flujo automático real con APIs, pagos o notificaciones.",
-    technologies: ["Placeholder"],
-    result: "Pendiente por reemplazar",
-    link: "#"
-  },
-  {
-    name: "Consultoría de red",
-    client: "Placeholder",
-    category: "Telecomunicaciones",
-    year: "Pendiente",
-    description: "Placeholder para un proyecto de arquitectura, optimización o documentación de redes.",
-    technologies: ["Placeholder"],
-    result: "Pendiente por reemplazar",
-    link: "#"
   }
 ];
 
 export const useCases = [
   {
-    title: "Para ISP",
-    items: ["Diseño de red", "Gestión de clientes", "Automatización de pagos", "Portales de usuarios", "Monitoreo", "IPv6", "Integración con MikroTik y OLT"]
+    title: "ISP que quieren escalar",
+    items: ["MikroTik", "IPv4 e IPv6", "Segmentacion", "Monitoreo", "GPON", "Firewall", "Optimizar rutas y capacidad"]
   },
   {
-    title: "Para empresas",
-    items: ["Redes corporativas", "Ciberseguridad", "Plataformas internas", "Automatización", "Sitios web", "Dashboards", "Integración de sistemas"]
+    title: "Empresas con redes criticas",
+    items: ["Redes corporativas", "Seguridad", "VPN", "Documentacion", "Soporte tecnico", "Dashboards", "Integracion de sistemas"]
   },
   {
-    title: "Para emprendedores",
-    items: ["Landing pages", "Presencia digital", "Sistemas simples", "Integraciones de pago", "Automatización comercial"]
+    title: "Negocios que necesitan presencia digital",
+    items: ["Sitios web", "Portales", "Automatizacion comercial", "Formularios", "WhatsApp", "SEO tecnico", "Experiencia movil"]
   }
 ];
 
-// Reemplazar por cifras reales antes de publicar en produccion.
 export const stats = [
-  { label: "Años de experiencia", value: "[AÑOS_DE_EXPERIENCIA]" },
-  { label: "Proyectos completados", value: "[PROYECTOS_COMPLETADOS]" },
-  { label: "Empresas atendidas", value: "[EMPRESAS_ATENDIDAS]" },
-  { label: "Redes optimizadas", value: "[REDES_OPTIMIZADAS]" }
+  { label: "Anos de experiencia", value: "+8" },
+  { label: "Cliente destacado", value: "Fibertech" },
+  { label: "Especialidad", value: "MikroTik" },
+  { label: "Stack de red", value: "IPv4/IPv6" }
 ];
 
-export const principles = ["Compromiso", "Innovación", "Claridad", "Seguridad", "Escalabilidad", "Acompañamiento"];
+export const principles = ["Consultoria", "Claridad", "Escalabilidad", "Seguridad", "Acompanamiento", "Mejora continua"];
 
 export const automationFlow = [
-  "Cliente realiza un pago",
-  "Sistema verifica",
-  "Plataforma actualiza",
-  "Servicio se activa",
-  "Cliente recibe notificación"
+  "Detectamos la tarea repetitiva",
+  "Conectamos plataformas",
+  "Validamos datos y reglas",
+  "Ejecutamos acciones",
+  "Reportamos el resultado"
 ];
 
-export const workMethod = ["Analizamos", "Diseñamos", "Implementamos", "Probamos", "Optimizamos", "Acompañamos"];
+export const workMethod = ["Diagnostico", "Diseno", "Implementacion", "Pruebas", "Optimizacion", "Acompanamiento"];
 
-export const serviceOptions = ["Telecomunicaciones", "Desarrollo web", "Automatización", "Consultoría", "Otro"];
-
-export const visualMetrics = [
-  { label: "Core", value: "stable" },
-  { label: "API", value: "ready" },
-  { label: "IPv6", value: "dual" },
-  { label: "Flow", value: "auto" }
-];
+export const serviceOptions = ["Consultoria ISP", "MikroTik / redes", "Desarrollo web", "Automatizacion", "Otro"];
