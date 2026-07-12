@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Check, CircleDot, Cpu, ExternalLink, Server, Shield, Zap } from "lucide-react";
+import { ArrowRight, Check, CircleDot, Cpu, ExternalLink, Server, Shield } from "lucide-react";
 import {
   automationFlow,
   company,
@@ -12,7 +12,6 @@ import {
   technologies,
   telecomCapabilities,
   useCases,
-  visualMetrics,
   workMethod
 } from "@/data/site";
 import { ContactForm } from "@/components/ui/ContactForm";
@@ -21,6 +20,19 @@ const fade = {
   hidden: { opacity: 0, y: 28 },
   visible: { opacity: 1, y: 0 }
 };
+
+const codeLines = [
+  "const stack = ['telecom', 'software', 'automation'];",
+  "await deploy.portal({ channel: 'stable', rollback: true });",
+  "network.edge.latency < 8 && services.sync();",
+  "ipv6.dualStack.enable({ customers, billing, support });",
+  "payments.on('approved', () => activateService());",
+  "monitor.uplinks().stream(logs => dashboard.push(logs));",
+  "api.gateway.secure({ firewall: true, rateLimit: 'smart' });",
+  "if (incident.open) notify.support.whatsapp();",
+  "queue.jobs.process('client-portal', { retries: 3 });",
+  "analytics.flow.map(route => route.optimize());"
+];
 
 export function HomePage() {
   const whatsapp = `https://wa.me/${company.whatsapp.number}?text=${encodeURIComponent(company.whatsapp.message)}`;
@@ -45,9 +57,6 @@ export function HomePage() {
               <span>automation.webhook("/payments").listen();</span>
               <span>logger.info("network latency: 7ms");</span>
             </div>
-            <div className="video-card video-card-a">core router</div>
-            <div className="video-card video-card-b">api gateway</div>
-            <div className="video-card video-card-c">client portal</div>
           </div>
           <div className="network-scene">
             <span className="node n1" />
@@ -77,24 +86,23 @@ export function HomePage() {
             </div>
           </motion.div>
 
-          <motion.div className="hero-system" initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.25, duration: 0.75 }}>
-            <div className="topology">
-              {["Internet", "Borde", "Core", "OLT", "Clientes"].map((node, index) => (
-                <span key={node} className={`topology-node t${index + 1}`}>
-                  {node}
-                </span>
-              ))}
+          <motion.div className="hero-code-stage" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 0.8 }} aria-hidden="true">
+            <div className="code-window">
+              <div className="code-glow" />
+              <div className="code-stream code-stream-a">
+                {[...codeLines, ...codeLines].map((line, index) => (
+                  <span key={`a-${index}`}>{line}</span>
+                ))}
+              </div>
+              <div className="code-stream code-stream-b">
+                {[...codeLines.slice(3), ...codeLines.slice(0, 3), ...codeLines].map((line, index) => (
+                  <span key={`b-${index}`}>{line}</span>
+                ))}
+              </div>
+              <div className="typing-line">
+                <span>networx.deploy("automatizacion", "redes", "software")</span>
+              </div>
             </div>
-            <div className="monitor-panel">
-              <div className="panel-head"><span /> <span /> <span /></div>
-              {visualMetrics.map((metric) => (
-                <div key={metric.label} className="metric-row">
-                  <span>{metric.label}</span>
-                  <strong>{metric.value}</strong>
-                </div>
-              ))}
-            </div>
-            <div className="flow-chip"><Zap size={16} /> procesos automáticos</div>
           </motion.div>
         </div>
         <a href="#posicionamiento" className="scroll-cue" aria-label="Desplazarse a la siguiente sección" />
