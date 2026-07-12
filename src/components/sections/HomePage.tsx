@@ -31,17 +31,20 @@ export function HomePage() {
 
       <section id="inicio" className="hero-section">
         <div className="hero-media" aria-hidden="true">
-          <video
-            className="hero-video"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="/media/video/hero-poster.jpg"
-          >
-            <source src="/media/video/hero-desktop.webm" type="video/webm" />
-            <source src="/media/video/hero-desktop.mp4" type="video/mp4" />
-          </video>
+          <div className="hero-generated-video">
+            <div className="video-grid" />
+            <div className="video-orbit orbit-a" />
+            <div className="video-orbit orbit-b" />
+            <div className="video-console">
+              <span>networx@core:~$ monitor uplinks --live</span>
+              <span>bgp session established / latency 7ms</span>
+              <span>deploy portal-client --channel stable</span>
+              <span>automation webhook payments: listening</span>
+            </div>
+            <div className="video-card video-card-a">core router</div>
+            <div className="video-card video-card-b">api gateway</div>
+            <div className="video-card video-card-c">client portal</div>
+          </div>
           <div className="network-scene">
             <span className="node n1" />
             <span className="node n2" />
