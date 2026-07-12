@@ -68,7 +68,6 @@ export function HomePage() {
         </div>
         <div className="hero-grid">
           <motion.div initial="hidden" animate="visible" variants={fade} transition={{ duration: 0.7 }} className="hero-copy">
-            <p className="eyebrow">Consultoria ISP · MikroTik · IPv4/IPv6</p>
             <h1>
               Consultores para hacer crecer tu red
             </h1>
@@ -233,14 +232,7 @@ export function HomePage() {
               <div className={`project-visual ${project.name === "Fibertech" ? "fibertech-cover" : ""}`}>
                 {project.name === "Fibertech" ? <span className="fibertech-f">F</span> : <Cpu size={38} />}
               </div>
-              <p className="eyebrow">{project.category}</p>
-              <h3>{project.name}</h3>
               <p>{project.description}</p>
-              <div className="chips">
-                {project.technologies.map((tech) => (
-                  <span key={tech}>{tech}</span>
-                ))}
-              </div>
               <a href={project.link} target={project.link === "#" ? undefined : "_blank"} rel="noreferrer">
                 Ver proyecto <ExternalLink size={15} />
               </a>

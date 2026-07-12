@@ -1,11 +1,10 @@
-<svg width="720" height="210" viewBox="0 0 720 210" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="720" height="210" fill="transparent"/>
-  <g transform="translate(36 52)">
-    <text x="0" y="70" font-family="Arial Black, Arial, sans-serif" font-size="72" font-style="italic" font-weight="900" fill="#FFFFFF">Networ</text>
-    <rect x="315" y="5" width="83" height="76" rx="6" fill="#FF4A1F"/>
-    <path d="M333 22L352 43L374 22H391L362 50L392 80H374L352 58L331 80H314L343 50L316 22H333Z" fill="#FFFFFF"/>
-    <circle cx="405" cy="34" r="5" fill="#FF4A1F"/>
-    <circle cx="405" cy="55" r="5" fill="#FF4A1F"/>
-    <text x="300" y="104" font-family="Arial Black, Arial, sans-serif" font-size="30" font-style="italic" font-weight="900" fill="#FF4A1F">Solutions</text>
+<svg width="430" height="126" viewBox="0 0 430 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(8 8)">
+    <text x="0" y="68" font-family="Arial Black, Arial, sans-serif" font-size="70" font-style="italic" font-weight="900" fill="#FFFFFF">Networ</text>
+    <rect x="308" y="4" width="76" height="70" rx="5" fill="#FF4A1F"/>
+    <path d="M325 20L344 41L366 20H381L354 48L382 76H366L344 55L324 76H308L336 48L310 20H325Z" fill="#FFFFFF"/>
+    <circle cx="392" cy="30" r="4.5" fill="#FF4A1F"/>
+    <circle cx="392" cy="50" r="4.5" fill="#FF4A1F"/>
+    <text x="290" y="106" font-family="Arial Black, Arial, sans-serif" font-size="28" font-style="italic" font-weight="900" fill="#FF4A1F">Solutions</text>
   </g>
 </svg>

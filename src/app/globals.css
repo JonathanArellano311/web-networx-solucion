@@ -38,10 +38,7 @@ h1,h2,h3,.btn-primary,.btn-secondary,.nav-link,.eyebrow{
   line-height:1;
 }
 .brand-wordmark.dark{
-  border-radius:10px;
-  background:#fff;
-  padding:7px 10px;
-  box-shadow:0 12px 36px rgba(0,0,0,.2);
+  filter:drop-shadow(0 1px 0 rgba(255,255,255,.22)) drop-shadow(0 10px 22px rgba(0,0,0,.32));
 }
 .brand-wordmark img{
   display:block;
@@ -521,18 +518,7 @@ h1,h2,h3,.btn-primary,.btn-secondary,.nav-link,.eyebrow{
   overflow:hidden;
 }
 .projects-section .project-card::after{
-  content:"Caso real publicado";
-  position:absolute;
-  right:22px;
-  top:22px;
-  border:1px solid rgba(255,74,31,.35);
-  border-radius:999px;
-  color:#fff;
-  background:rgba(255,74,31,.16);
-  padding:8px 12px;
-  font-size:.72rem;
-  font-weight:1000;
-  text-transform:uppercase;
+  display:none;
 }
 .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
 .chips span,.process-tabs span,.principles span{
